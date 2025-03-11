@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    let valorProduto = Number(prompt("Digite o valor do produto R$: "))
+    let pagamento = Number(prompt(`Escolha a forma de pagamento: \n[1] À vista\n[2] Parcelado 3x`))
+    if (pagamento == 1) {
+        alert(`Você escolheu à vista, preço total é de R$${valorProduto-(valorProduto*0.10)}`)
+        } else if (pagamento==2){
+        alert(`Você escolheu parcelado, preço de cada parcela é de R$${valorProduto/3}`)
+        }
+            else{
+                alert("Opção inválida.")
+            }
+</script>

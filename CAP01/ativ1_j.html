@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    cand1=Number(0)
+    cand2=Number(0)
+    cand3=Number(0)
+    let i=Number(prompt("Digite a quantidade de eleitores: "))
+    for(var v=1; v<=i;v++){
+        let num=Number(prompt(`Vote no número do candidato: \n[1] Candidato 1\n[2] Candidato 2\n[3] Candidato 3`))
+        if(num==1){
+            cand1++
+        } else if(num==2){
+            cand2++
+        } else if(num==3){
+            cand3++
+        } else{
+            alert("Candidato inválido.")
+        }
+    }
+    alert(`O primeiro candidato teve ${cand1} votos, o candidato 2 teve ${cand2}, e o candidato 3 teve ${cand3}`)
+</script>

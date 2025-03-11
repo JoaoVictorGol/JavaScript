@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    valorTotal=Number(0)
+    do{
+        valor=Number(prompt("Digite o valor do produto\n(0 termina a transação): "))
+        if(valor<0){
+            alert("Valor inválido, tente novamente.")
+            valor=Number(prompt("Digite o valor do produto: "))
+        }
+        valorTotal+=valor
+
+    }while(valor!=0)
+    if(valorTotal>=800){
+        valorPago=valorTotal-(valorTotal*0.10)
+    }else{
+        valorPago=valorTotal
+    }
+    alert(`O valor total à ser pago é de R$${valorPago}`)
+</script>

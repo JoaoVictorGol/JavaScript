@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    resposta="sim"
+    qtd=Number(0)
+    IdadeAcima21=Number(0)
+    media=Number(0)
+
+    do{
+        idade=Number(prompt("Digite a idade da pessoa: "))
+        media+=idade
+        if(idade>=21){
+            IdadeAcima21++
+        }
+        qtd++
+        resposta=prompt(`Você quer continuar?`)
+    }while(resposta==="sim" || resposta==="s")
+
+    alert(`Você registrou a idade de ${qtd} usuários, com média total de ${media/qtd}, e ${IdadeAcima21} usuários com idade acima de 21.`)
+</script>

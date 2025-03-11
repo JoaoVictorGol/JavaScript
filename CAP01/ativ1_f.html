@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    nivel=Number(prompt(`Digite o nível do professor: \n[1] Nível 1 R$12,00\n[2] Nível 1 R$17,00\n[3] Nível 3 R$25,00`))
+    horas=Number(prompt("Digite as horas trabalhadas: "))
+
+    if(nivel==1){
+        alert(`Esse professor vai ganhar R$${horas*12} no fim do mês.`)
+    } else if(nivel==2){
+        alert(`Esse professor vai ganhar R$${horas*17} no fim do mês.`)
+    } else if(nivel==3){
+        alert(`Esse professor vai ganhar R$${horas*25} no fim do mês.`)
+    } else{
+        alert('Nível inválido.')
+    }
+</script>
